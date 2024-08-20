@@ -1,3 +1,4 @@
+import os
 import s3fs
 import xarray as xr
 import numpy as np
@@ -70,5 +71,29 @@ class Geoglows:
         """
         df = ds['Qout'].sel(rivid=comids).to_dataframe().reset_index()
         df_pivot = df.pivot(index='time', columns='rivid', values='Qout')
-        df_monthly = df_pivot.resample('ME').mean()
+        df_monthly = df_pivot.resample('MS').mean()
         return df_monthly
+
+    def save_data(self, data: pd.DataFrame, save_type: str, dir_path: str) -> None:
+        """
+        Saves the given DataFrame based on the specified save type.
+
+        Parameters:
+        - data (pd.DataFrame): The DataFrame containing the data to be saved.
+        - save_type (str): Specifies how to save the data. Options are:
+            - "overall": Saves the entire DataFrame to a single CSV file.
+            - "individual": Saves each column of the DataFrame as a separate CSV file.
+        - dir_path (str): The directory path where the files should be saved.
+
+        Raises:
+        - ValueError: If the save_type is not 'overall' or 'individual'.
+        """
+        if save_type == "overall":
+            data.to_csv(os.path.join(dir_path, "historical_simulation.csv"))
+        elif save_type == "individual":
+            for column in data.columns:
+                temp_data = data[[column]].copy()
+                temp_data.to_csv(os.path.join(dir_path, f'{column}.csv'))
+        else:
+            raise ValueError("save_type must be 'overall' or 'individual'!")
+

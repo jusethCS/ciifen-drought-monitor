@@ -1,3 +1,5 @@
 server-key.cer
 connect.bat
 assets/shp/*
+modules/__pycache__/*
+outputs/*
