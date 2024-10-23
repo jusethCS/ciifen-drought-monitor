@@ -3,3 +3,4 @@ connect.bat
 assets/shp/*
 modules/__pycache__/*
 outputs/*
+data/*
