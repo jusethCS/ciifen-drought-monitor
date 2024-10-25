@@ -1,0 +1,23 @@
+name: ciifen-drougth-monitor
+channels:
+  - conda-forge
+  - anaconda
+dependencies:
+  - s3fs
+  - zarr
+  - cftime
+  - xarray
+  - pandas
+  - geopandas
+  - rasterio
+  - scipy
+  - basemap
+  - r-base
+  - r-ggplot2
+  - r-gstat
+  - r-sp
+  - r-raster
+  - r-stars
+  - r-codetools
+  - r-rgdal
+  - cartopy

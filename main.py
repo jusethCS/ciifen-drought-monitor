@@ -5,8 +5,17 @@ import numpy as np
 import pandas as pd
 import datetime as dt
 import geopandas as gpd
+from rasterio.mask import mask
 from scipy.interpolate import griddata
 from rasterio.transform import from_origin
+from dateutil.relativedelta import relativedelta
+
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
+import rasterio
+import rasterio.mask
+import geopandas as gpd
 
 from modules.geoglows import Geoglows
 from modules.nalbantis import Nalbantis
@@ -20,9 +29,18 @@ DAT_DIR = "data/historical"
 COMIDS_PATH = "assets/ecuador.csv"
 OUT_PATH = "data/historical/"
 OUTPUT_FILE = f"data/index/txt/{dt.datetime.now().strftime('%Y_%m')}.csv"
-BASE_TIF_PATH = "assets/base.tif"
-BASE_TWF_PATH = "assets/base.tfw"
 
+TIF01_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_01')}.tif"
+TIF03_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_03')}.tif"
+TIF06_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_06')}.tif"
+TIF09_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_09')}.tif"
+TIF12_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_12')}.tif"
+
+PNG01_FILE = f"data/index/png/{dt.datetime.now().strftime('%Y_%m_01')}.png"
+PNG03_FILE = f"data/index/png/{dt.datetime.now().strftime('%Y_%m_03')}.png"
+PNG06_FILE = f"data/index/png/{dt.datetime.now().strftime('%Y_%m_06')}.png"
+PNG09_FILE = f"data/index/png/{dt.datetime.now().strftime('%Y_%m_09')}.png"
+PNG12_FILE = f"data/index/png/{dt.datetime.now().strftime('%Y_%m_12')}.png"
 
 def clear_output_directories():
     """Delete and recreate output directories."""
@@ -67,11 +85,11 @@ def compute_sdi(metadata):
 
             sdi_output = {
                 'comid': comid,
-                'sdi_1': round(sdi.sdi_value_1m.iloc[0], 3),
-                'sdi_3': round(sdi.sdi_value_3m.iloc[0], 3),
-                'sdi_6': round(sdi.sdi_value_6m.iloc[0], 3),
-                'sdi_9': round(sdi.sdi_value_9m.iloc[0], 3),
-                'sdi_12': round(sdi.sdi_value_12m.iloc[0], 3),
+                '1': round(sdi.sdi_value_1m.iloc[0], 3),
+                '3': round(sdi.sdi_value_3m.iloc[0], 3),
+                '6': round(sdi.sdi_value_6m.iloc[0], 3),
+                '9': round(sdi.sdi_value_9m.iloc[0], 3),
+                '12': round(sdi.sdi_value_12m.iloc[0], 3),
             }
             sdi_outputs.append(sdi_output)
 
@@ -79,75 +97,121 @@ def compute_sdi(metadata):
             print(f"File not found for COMID {comid}, skipping...")
             sdi_outputs.append({
                 'comid': comid,
-                'sdi_1': 0, 'sdi_3': 0, 'sdi_6': 0,
-                'sdi_9': 0, 'sdi_12': 0
+                '1': 0, '3': 0, '6': 0,
+                '9': 0, '12': 0
             })
         except Exception as e:
             print(f"An error occurred for COMID {comid}: {e}")
             sdi_outputs.append({
                 'comid': comid,
-                'sdi_1': 0, 'sdi_3': 0, 'sdi_6': 0,
-                'sdi_9': 0, 'sdi_12': 0
+                '1': 0, '3': 0, '6': 0,
+                '9': 0, '12': 0
             })
 
     return pd.DataFrame(sdi_outputs)
 
 
+def color(pixelValue: float) -> str:
+    if -10.0 <= pixelValue <= -2.50:
+        return '#890002'
+    elif -2.50 < pixelValue <= -2.00:
+        return '#aa0001'
+    elif -2.00 < pixelValue <= -1.75:
+        return '#ca0000'
+    elif -1.75 < pixelValue <= -1.50:
+        return '#e50201'
+    elif -1.50 < pixelValue <= -1.25:
+        return '#f41f0a'
+    elif -1.25 < pixelValue <= -1.00:
+        return '#f1651d'
+    elif -1.00 < pixelValue <= -0.75:
+        return '#ed9028'
+    elif -0.75 < pixelValue <= -0.50:
+        return '#e9aa2d'
+    elif -0.50 < pixelValue <= -0.25:
+        return '#dfbf77'
+    elif -0.25 < pixelValue <= 0.00:
+        return '#97C798'
+    elif 0.00 < pixelValue <= 0.25:
+        return '#54BA57'
+    elif 0.25 < pixelValue <= 0.50:
+        return '#12AD16'
+    elif 0.50 < pixelValue <= 0.75:
+        return '#009E3C'
+    elif 0.75 < pixelValue <= 5:
+        return '#00A1DF'
+    else:
+        return "none"
 
-def to_raster(df, interpolation_field, output_raster_path):
+def plot_raster(raster_url: str, gdf: gpd.GeoDataFrame, fig_name: str, color: any, aggTime:str) -> None:
     """
-    Interpolates values from a DataFrame field into a raster with the same 
-    extent, resolution, and CRS as a given base raster.
+    Plots a raster based on a GeoDataFrame without reprojection or resampling.
 
     Parameters:
-    df (pandas.DataFrame): DataFrame with 'Longitude', 'Latitude', and the 
-                           field to interpolate.
-    interpolation_field (str): Column name of the field to interpolate.
-    output_raster_path (str): Path where the interpolated raster will be saved.
+     - raster_url (str): Path to the input raster file.
+     - gdf (GeoDataFrame): GeoDataFrame containing the geometries for masking.
+     - fig_name (str): Output figure file name.
+     - color (function): Function that returns a color based on a pixel value.
     """
-    
-    # Define the domain of interest [LonMin, LonMax, LatMin, LatMax]
-    domain = [-81, -75, -5, 1.25]
-    lon_min, lon_max, lat_min, lat_max = domain
-    
-    # Filter rows with valid 'Latitud', 'Longitud', and the interpolation field
-    df_filtered = df.dropna(subset=['Latitud', 'Longitud', interpolation_field])
-    
-    # Create a GeoDataFrame with point geometries from the coordinates
-    gdf = gpd.GeoDataFrame(df_filtered, 
-                           geometry=gpd.points_from_xy(df_filtered['Longitud'], 
-                                                       df_filtered['Latitud']))
+    # Abre el raster utilizando rasterio
+    with rasterio.open(raster_url) as src:
+        # Leer los datos del raster
+        out_image_masked, out_transform = rasterio.mask.mask(
+            src, gdf.geometry, crop=True
+        )
 
-    # Create a grid for interpolation
-    resolution = 0.05  # Cambia la resolución según sea necesario
-    lon_grid = np.arange(lon_min, lon_max, resolution)
-    lat_grid = np.arange(lat_min, lat_max, resolution)
-    grid_lon, grid_lat = np.meshgrid(lon_grid, lat_grid)
-    
-    # Interpolate the values on the grid
-    points = np.column_stack((df_filtered['Longitud'], df_filtered['Latitud']))
-    values = df_filtered[interpolation_field].values
-    interpolated_values = griddata(points, values, (grid_lon, grid_lat), method='linear')
-    
-    # Manejo de NaNs
-    interpolated_values = np.nan_to_num(interpolated_values, nan=0)
-    
-    # Create a raster with the interpolated values
-    transform = from_origin(lon_min, lat_max, resolution, resolution)
-    
-    with rasterio.open(
-        output_raster_path,
-        'w',
-        driver='GTiff',
-        height=grid_lon.shape[0],
-        width=grid_lon.shape[1],
-        count=1,
-        dtype=interpolated_values.dtype,
-        crs='EPSG:4326',  # Define CRS (change as needed)
-        transform=transform
-    ) as dst:
-        dst.write(interpolated_values, 1)
+    # Convertir a un arreglo de float64
+    out_image_masked = out_image_masked.astype(np.float64)
 
+    # Reemplazar valores menores a -10 o mayores a 10 con NaN
+    out_image_masked = np.where((out_image_masked < -10) | (out_image_masked > 10), np.nan, out_image_masked)
+
+    # Asegurarse de que no haya valores NaN
+    out_image_masked = np.nan_to_num(out_image_masked, nan=np.nan)
+
+    # Encontrar valores mínimos y máximos
+    mmin = -3 #np.nanmin(out_image_masked)
+    mmax = 1 #np.nanmax(out_image_masked)
+
+    # Si mmin es igual a mmax, evitar crear linspace con un rango inválido
+    if mmin == mmax:
+        print("Los valores mínimos y máximos son iguales. No se puede crear linspace.")
+        return
+
+    # Crear una lista de valores entre 0 y 1
+    values = np.linspace(mmin, mmax, 500)  # Limitar a un máximo de 1000 colores
+
+    # Crear una lista de colores utilizando la función color
+    colors = [color(value) for value in values]
+    cmap_custom = ListedColormap(colors)
+
+    # Crea una figura de Matplotlib y muestra el raster enmascarado
+    fig, ax = plt.subplots(figsize=(8, 8))
+    plt.margins(0)
+
+    # Mostrar la imagen del raster usando imshow para obtener el mapeador
+    img = ax.imshow(out_image_masked[0], cmap=cmap_custom, extent=(
+        out_transform[2], 
+        out_transform[2] + out_transform[0] * out_image_masked.shape[2],
+        out_transform[5] + out_transform[4] * out_image_masked.shape[1], 
+        out_transform[5]
+    ), vmin=-3, vmax=1)
+
+    gdf.plot(ax=ax, color='none', edgecolor='black', linewidth=1)
+
+    # Establecer límites en los ejes x e y
+    plt.xlim(-81.3, -74.9)
+    plt.ylim(-5.2, 1.6)
+
+    # Agregar la barra de color
+    fig.colorbar(img, ax=ax, label='', pad=0.05, shrink=0.5, extend='both', ticks=[-3.0, -2.5, -2.0, -1.5, -1.0, -0.5, 0.0, 0.5, 1])
+    fd = (dt.datetime.now() - relativedelta(months=1)).strftime('%m-%Y')
+    plt.title(f"Índice hidrológico de sequía de Nalbantis: {aggTime} mes \nPeriodo: {fd}")
+    plt.draw()
+    ax.grid(True, which='both', linestyle='--', linewidth=0.5)
+
+    # Guardar la figura
+    plt.savefig(fig_name, bbox_inches='tight', pad_inches=0)
 
 
 def main():
@@ -159,24 +223,30 @@ def main():
 
     # Download data and compute the SDI
     download_data(glw)
-    metadata = pd.read_csv(COMIDS_PATH, sep=",").drop(
-        columns=["order", "latitude", "longitude"]
-    )
+    metadata = pd.read_csv(COMIDS_PATH, sep=",")[["Clave", "Longitud", "Latitud", "comid"]]
+    metadata.columns = ['Estacion', 'Lon', 'Lat', "comid"]
     sdi_outputs = compute_sdi(metadata)
 
     # Merge metadata with SDI outputs and save to CSV
     sdi_outputs = pd.merge(metadata, sdi_outputs, on="comid")
+    sdi_outputs = sdi_outputs.drop(columns=["comid"])
     sdi_outputs.to_csv(OUTPUT_FILE, sep=",", index=False)
 
-    # Date for files
-    date = dt.datetime.now().strftime('%Y_%m')
-    
-    # Create the raster
-    to_raster(sdi_outputs, "sdi_1", f"data/index/tif/{date}_01.tif")
-    to_raster(sdi_outputs, "sdi_3", f"data/index/tif/{date}_03.tif")
-    to_raster(sdi_outputs, "sdi_6", f"data/index/tif/{date}_06.tif")
-    to_raster(sdi_outputs, "sdi_9", f"data/index/tif/{date}_09.tif")
-    to_raster(sdi_outputs, "sdi_12", f"data/index/tif/{date}_12.tif")
+    # Create GeoTIFF
+    os.system(f'Rscript generate_tif.R {OUTPUT_FILE} {TIF01_FILE} "X1"')
+    os.system(f'Rscript generate_tif.R {OUTPUT_FILE} {TIF03_FILE} "X3"')
+    os.system(f'Rscript generate_tif.R {OUTPUT_FILE} {TIF06_FILE} "X6"')
+    os.system(f'Rscript generate_tif.R {OUTPUT_FILE} {TIF09_FILE} "X9"')
+    os.system(f'Rscript generate_tif.R {OUTPUT_FILE} {TIF12_FILE} "X12"')
+
+    # Generate PNG plots
+    ec = gpd.read_file("assets/ecuador.shp")
+    plot_raster( raster_url=TIF01_FILE, gdf=ec, fig_name=PNG01_FILE, color=color, aggTime="01")
+    plot_raster( raster_url=TIF03_FILE, gdf=ec, fig_name=PNG03_FILE, color=color, aggTime="03")
+    plot_raster( raster_url=TIF06_FILE, gdf=ec, fig_name=PNG06_FILE, color=color, aggTime="06")
+    plot_raster( raster_url=TIF09_FILE, gdf=ec, fig_name=PNG09_FILE, color=color, aggTime="09")
+    plot_raster( raster_url=TIF12_FILE, gdf=ec, fig_name=PNG12_FILE, color=color, aggTime="12")
+
 
 
 if __name__ == "__main__":
