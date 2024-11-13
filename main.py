@@ -26,8 +26,9 @@ PNG_DIR = "data/index/png"
 TIF_DIR = "data/index/tif"
 TXT_DIR = "data/index/txt"
 DAT_DIR = "data/historical"
-COMIDS_PATH = "assets/ecuador.csv"
+COMIDS_PATH = "assets/Esta_Ecuador.csv"
 OUT_PATH = "data/historical/"
+OUT_PATH_FORMATED = "data/formated_historical/"
 OUTPUT_FILE = f"data/index/txt/{dt.datetime.now().strftime('%Y_%m')}.csv"
 
 TIF01_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_01')}.tif"
@@ -56,6 +57,7 @@ def download_data(glw):
     comids = glw.verify_comids(ds=dataset, csv=COMIDS_PATH)
     data = glw.get_data(ds=dataset, comids=comids)
     glw.save_data(data=data, save_type="individual", dir_path=OUT_PATH)
+    glw.save_format_data(data=data, save_type="individual", dir_path=OUT_PATH_FORMATED)
 
 
 def compute_sdi(metadata):
@@ -93,55 +95,61 @@ def compute_sdi(metadata):
             }
             sdi_outputs.append(sdi_output)
 
-        except FileNotFoundError:
-            print(f"File not found for COMID {comid}, skipping...")
-            sdi_outputs.append({
-                'comid': comid,
-                '1': 0, '3': 0, '6': 0,
-                '9': 0, '12': 0
-            })
-        except Exception as e:
-            print(f"An error occurred for COMID {comid}: {e}")
-            sdi_outputs.append({
-                'comid': comid,
-                '1': 0, '3': 0, '6': 0,
-                '9': 0, '12': 0
-            })
+        except:
+            pass
 
     return pd.DataFrame(sdi_outputs)
 
 
 def color(pixelValue: float) -> str:
-    if -10.0 <= pixelValue <= -2.50:
+    if -10.0 <= pixelValue < -2.75:
         return '#890002'
-    elif -2.50 < pixelValue <= -2.00:
-        return '#aa0001'
-    elif -2.00 < pixelValue <= -1.75:
+    elif -2.75 <= pixelValue < -2.5:
+        return '#a10001'
+    elif -2.5 <= pixelValue < -2.25:
         return '#ca0000'
-    elif -1.75 < pixelValue <= -1.50:
+    elif -2.25 <= pixelValue < -2.0:
         return '#e50201'
-    elif -1.50 < pixelValue <= -1.25:
+    elif -2.0 <= pixelValue < -1.75:
         return '#f41f0a'
-    elif -1.25 < pixelValue <= -1.00:
+    elif -1.75 <= pixelValue < -1.5:
         return '#f1651d'
-    elif -1.00 < pixelValue <= -0.75:
+    elif -1.5 <= pixelValue < -1.25:
         return '#ed9028'
-    elif -0.75 < pixelValue <= -0.50:
+    elif -1.25 <= pixelValue < -1.0:
         return '#e9aa2d'
-    elif -0.50 < pixelValue <= -0.25:
+    elif -1.0 <= pixelValue < -0.75:
         return '#dfbf77'
-    elif -0.25 < pixelValue <= 0.00:
-        return '#97C798'
-    elif 0.00 < pixelValue <= 0.25:
-        return '#54BA57'
-    elif 0.25 < pixelValue <= 0.50:
-        return '#12AD16'
-    elif 0.50 < pixelValue <= 0.75:
-        return '#009E3C'
-    elif 0.75 < pixelValue <= 5:
-        return '#00A1DF'
+    elif -0.75 <= pixelValue < -0.25:
+        return '#c8c8c8'  # Gris para valores cercanos a -0.25
+    elif -0.25 <= pixelValue < 0.25:
+        return '#c8c8c8'  # Gris para el rango de -0.25 a 0.25
+    elif 0.25 <= pixelValue < 0.5:
+        return '#54ba57'
+    elif 0.5 <= pixelValue < 0.75:
+        return '#009e3c'
+    elif 0.75 <= pixelValue < 1.0:
+        return '#00a1df'
+    elif 1.0 <= pixelValue < 1.25:
+        return '#00b0df'
+    elif 1.25 <= pixelValue < 1.5:
+        return '#00b8e0'
+    elif 1.5 <= pixelValue < 1.75:
+        return '#009fdf'
+    elif 1.75 <= pixelValue < 2.0:
+        return '#007cdf'
+    elif 2.0 <= pixelValue < 2.25:
+        return '#0062df'
+    elif 2.25 <= pixelValue < 2.5:
+        return '#7100d0'
+    elif 2.5 <= pixelValue < 2.75:
+        return '#8900b0'
+    elif 2.75 <= pixelValue <= 10.0:
+        return '#a00090'
     else:
         return "none"
+
+
 
 def plot_raster(raster_url: str, gdf: gpd.GeoDataFrame, fig_name: str, color: any, aggTime:str) -> None:
     """
@@ -171,7 +179,7 @@ def plot_raster(raster_url: str, gdf: gpd.GeoDataFrame, fig_name: str, color: an
 
     # Encontrar valores mínimos y máximos
     mmin = -3 #np.nanmin(out_image_masked)
-    mmax = 1 #np.nanmax(out_image_masked)
+    mmax = 3 #np.nanmax(out_image_masked)
 
     # Si mmin es igual a mmax, evitar crear linspace con un rango inválido
     if mmin == mmax:
@@ -195,7 +203,7 @@ def plot_raster(raster_url: str, gdf: gpd.GeoDataFrame, fig_name: str, color: an
         out_transform[2] + out_transform[0] * out_image_masked.shape[2],
         out_transform[5] + out_transform[4] * out_image_masked.shape[1], 
         out_transform[5]
-    ), vmin=-3, vmax=1)
+    ), vmin=-3, vmax=3)
 
     gdf.plot(ax=ax, color='none', edgecolor='black', linewidth=1)
 
@@ -204,8 +212,8 @@ def plot_raster(raster_url: str, gdf: gpd.GeoDataFrame, fig_name: str, color: an
     plt.ylim(-5.2, 1.6)
 
     # Agregar la barra de color
-    fig.colorbar(img, ax=ax, label='', pad=0.05, shrink=0.5, extend='both', ticks=[-3.0, -2.5, -2.0, -1.5, -1.0, -0.5, 0.0, 0.5, 1])
-    fd = (dt.datetime.now() - relativedelta(months=1)).strftime('%m-%Y')
+    fig.colorbar(img, ax=ax, label='', pad=0.05, shrink=0.5, extend='both', ticks=[-3.0, -2.5, -2.0, -1.5, -1.0, -0.5, 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3])
+    fd = (dt.datetime.now().replace(day=1) - pd.DateOffset(months=1)).strftime('%Y-%m')
     plt.title(f"Índice hidrológico de sequía de Nalbantis: {aggTime} mes \nPeriodo: {fd}")
     plt.draw()
     ax.grid(True, which='both', linestyle='--', linewidth=0.5)
