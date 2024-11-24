@@ -5,21 +5,13 @@ import numpy as np
 import pandas as pd
 import datetime as dt
 import geopandas as gpd
-from rasterio.mask import mask
-from scipy.interpolate import griddata
-from rasterio.transform import from_origin
-from dateutil.relativedelta import relativedelta
-
-import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.colors import ListedColormap
-import rasterio
-import rasterio.mask
-import geopandas as gpd
-
 from modules.geoglows import Geoglows
 from modules.nalbantis import Nalbantis
+from matplotlib.colors import ListedColormap
 
+# Date
+DATE = dt.datetime.now().replace(day=1) - pd.DateOffset(months=1)
 
 # Constants for paths
 PNG_DIR = "data/index/png"
@@ -29,19 +21,21 @@ DAT_DIR = "data/historical"
 COMIDS_PATH = "assets/Esta_Ecuador.csv"
 OUT_PATH = "data/historical/"
 OUT_PATH_FORMATED = "data/formated_historical/"
-OUTPUT_FILE = f"data/index/txt/{dt.datetime.now().strftime('%Y_%m')}.csv"
+OUTPUT_FILE = f"data/index/txt/{DATE.strftime('%Y_%m')}.csv"
 
-TIF01_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_01')}.tif"
-TIF03_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_03')}.tif"
-TIF06_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_06')}.tif"
-TIF09_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_09')}.tif"
-TIF12_FILE = f"data/index/tif/{dt.datetime.now().strftime('%Y_%m_12')}.tif"
+TIF01_FILE = f"data/index/tif/{DATE.strftime('%Y_%m_01')}.tif"
+TIF03_FILE = f"data/index/tif/{DATE.strftime('%Y_%m_03')}.tif"
+TIF06_FILE = f"data/index/tif/{DATE.strftime('%Y_%m_06')}.tif"
+TIF09_FILE = f"data/index/tif/{DATE.strftime('%Y_%m_09')}.tif"
+TIF12_FILE = f"data/index/tif/{DATE.strftime('%Y_%m_12')}.tif"
 
-PNG01_FILE = f"data/index/png/{dt.datetime.now().strftime('%Y_%m_01')}.png"
-PNG03_FILE = f"data/index/png/{dt.datetime.now().strftime('%Y_%m_03')}.png"
-PNG06_FILE = f"data/index/png/{dt.datetime.now().strftime('%Y_%m_06')}.png"
-PNG09_FILE = f"data/index/png/{dt.datetime.now().strftime('%Y_%m_09')}.png"
-PNG12_FILE = f"data/index/png/{dt.datetime.now().strftime('%Y_%m_12')}.png"
+PNG01_FILE = f"data/index/png/{DATE.strftime('%Y_%m_01')}.png"
+PNG03_FILE = f"data/index/png/{DATE.strftime('%Y_%m_03')}.png"
+PNG06_FILE = f"data/index/png/{DATE.strftime('%Y_%m_06')}.png"
+PNG09_FILE = f"data/index/png/{DATE.strftime('%Y_%m_09')}.png"
+PNG12_FILE = f"data/index/png/{DATE.strftime('%Y_%m_12')}.png"
+
+
 
 def clear_output_directories():
     """Delete and recreate output directories."""
@@ -213,7 +207,7 @@ def plot_raster(raster_url: str, gdf: gpd.GeoDataFrame, fig_name: str, color: an
 
     # Agregar la barra de color
     fig.colorbar(img, ax=ax, label='', pad=0.05, shrink=0.5, extend='both', ticks=[-3.0, -2.5, -2.0, -1.5, -1.0, -0.5, 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3])
-    fd = (dt.datetime.now().replace(day=1) - pd.DateOffset(months=1)).strftime('%Y-%m')
+    fd = DATE.strftime('%Y-%m')
     plt.title(f"Índice hidrológico de sequía de Nalbantis: {aggTime} mes \nPeriodo: {fd}")
     plt.draw()
     ax.grid(True, which='both', linestyle='--', linewidth=0.5)
@@ -230,7 +224,9 @@ def main():
     glw = Geoglows()
 
     # Download data and compute the SDI
+    print("Downloading")
     download_data(glw)
+    print("Downloaded")
     metadata = pd.read_csv(COMIDS_PATH, sep=",")[["Clave", "Longitud", "Latitud", "comid"]]
     metadata.columns = ['Estacion', 'Lon', 'Lat', "comid"]
     sdi_outputs = compute_sdi(metadata)
