@@ -49,14 +49,14 @@ idw.output <- as.data.frame(idw)
 names(idw.output)[1:3] <- c("long", "lat", "sequia")  # Rename columns
 
 # Load the contour shapefile for masking
-est_contour <- rgdal::readOGR("assets", "ecuador")
+est_contour <- rgdal::readOGR("assets", "colombia")
 est_contour <- fortify(est_contour)  # Convert for use with ggplot2
 
 # Convert the IDW result into a raster object
 idw.r <- rasterFromXYZ(idw.output[, c("long", "lat", "sequia")])
 
 # Load the contour shapefile again for cropping
-est_contour_k <- rgdal::readOGR("assets", "ecuador")
+est_contour_k <- rgdal::readOGR("assets", "colombia")
 
 # Crop the raster using the contour shapefile
 idw.crp <- crop(idw.r, est_contour_k)
