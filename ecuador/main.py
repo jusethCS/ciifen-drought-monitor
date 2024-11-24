@@ -5,10 +5,14 @@ import numpy as np
 import pandas as pd
 import datetime as dt
 import geopandas as gpd
+from rasterio.mask import mask
+from scipy.interpolate import griddata
+from rasterio.transform import from_origin
+from dateutil.relativedelta import relativedelta
 import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
 from modules.geoglows import Geoglows
 from modules.nalbantis import Nalbantis
-from matplotlib.colors import ListedColormap
 
 # Date
 DATE = dt.datetime.now().replace(day=1) - pd.DateOffset(months=1)
@@ -245,11 +249,11 @@ def main():
 
     # Generate PNG plots
     ec = gpd.read_file("assets/ecuador.shp")
-    plot_raster( raster_url=TIF01_FILE, gdf=ec, fig_name=PNG01_FILE, color=color, aggTime="01")
-    plot_raster( raster_url=TIF03_FILE, gdf=ec, fig_name=PNG03_FILE, color=color, aggTime="03")
+    plot_raster(raster_url=TIF01_FILE, gdf=ec, fig_name=PNG01_FILE, color=color, aggTime="01")
+    plot_raster(raster_url=TIF03_FILE, gdf=ec, fig_name=PNG03_FILE, color=color, aggTime="03")
     plot_raster( raster_url=TIF06_FILE, gdf=ec, fig_name=PNG06_FILE, color=color, aggTime="06")
-    plot_raster( raster_url=TIF09_FILE, gdf=ec, fig_name=PNG09_FILE, color=color, aggTime="09")
-    plot_raster( raster_url=TIF12_FILE, gdf=ec, fig_name=PNG12_FILE, color=color, aggTime="12")
+    plot_raster(raster_url=TIF09_FILE, gdf=ec, fig_name=PNG09_FILE, color=color, aggTime="09")
+    plot_raster(raster_url=TIF12_FILE, gdf=ec, fig_name=PNG12_FILE, color=color, aggTime="12")
 
 
 
