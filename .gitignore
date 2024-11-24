@@ -4,3 +4,4 @@ assets/shp/*
 modules/__pycache__/*
 outputs/*
 ecuador/data/*
+colombia/data/*
