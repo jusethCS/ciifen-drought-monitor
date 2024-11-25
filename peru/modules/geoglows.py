@@ -70,7 +70,7 @@ class Geoglows:
             pd.DataFrame: A DataFrame where each column represents the streamflow
             data for a specific COMID, indexed by time.
         """
-        batch_size = 400
+        batch_size = 200
         result_frames = []
 
         # Process COMIDs in batches
