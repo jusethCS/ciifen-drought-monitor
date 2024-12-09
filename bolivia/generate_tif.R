@@ -28,8 +28,8 @@ coordinates(sequia2) <- ~x + y
 crs(sequia2) = "+proj=longlat +datum=WGS84 +no_defs"
 
 # Define the coordinate range for the interpolation grid
-x.range <- as.numeric(c(-73.75, -59.50))   # Longitude range
-y.range <- as.numeric(c(0.50, 12.50))      # Latitude range
+x.range <- as.numeric(c(-73.75, -56.00))   # Longitude range
+y.range <- as.numeric(c(-23.50, -9.00))      # Latitude range
 
 
 # Create a grid with the specified coordinate range
@@ -49,14 +49,14 @@ idw.output <- as.data.frame(idw)
 names(idw.output)[1:3] <- c("long", "lat", "sequia")  # Rename columns
 
 # Load the contour shapefile for masking
-est_contour <- rgdal::readOGR("assets", "venezuela")
+est_contour <- rgdal::readOGR("assets", "bolivia")
 est_contour <- fortify(est_contour)  # Convert for use with ggplot2
 
 # Convert the IDW result into a raster object
 idw.r <- rasterFromXYZ(idw.output[, c("long", "lat", "sequia")])
 
 # Load the contour shapefile again for cropping
-est_contour_k <- rgdal::readOGR("assets", "venezuela")
+est_contour_k <- rgdal::readOGR("assets", "bolivia")
 
 # Crop the raster using the contour shapefile
 idw.crp <- crop(idw.r, est_contour_k)

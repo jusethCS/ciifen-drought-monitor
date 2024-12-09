@@ -1,0 +1,534 @@
+Clave,Longitud,Latitud,Altura,Nombre,Estacion,DEPARTAMEN,PROVINCIA,MUNICIPIO,comid
+E000001002,-64.37833,-19.24639,2120,Arquillos,,Chuquisaca,Tomina,Padilla,620048093
+E000001003,-64.41,-20.10056,2530,Azurduy,,Chuquisaca,Azurduy,Azurduy,620037132
+E000001005,-65.26667,-19.13333,2400,Cachimayu,,Chuquisaca,Oropeza,Yotala,640326278
+E000001008,-64.9425,-20.82861,2960,Culpina,,Chuquisaca,Sud Cinti,Culpina,640367841
+E000001012,-65.1225,-18.83111,1775,Chuqui Chuqui,,Chuquisaca,Oropeza,Sucre,620126504
+E000001016,-64.30694,-19.63111,2080,El Villar,,Chuquisaca,Tomina,El Villar,620038483
+E000001021,-64.00222,-20.36111,1140,Huacareta La Galeria,,Chuquisaca,Hernando Siles,Huacareta,620019258
+E000001023,-65.9575,-19.34778,2080,La Mendoza,,Chuquisaca,Yamparaez,Yocalla,640266386
+E000001025,-65.14083,-20.61583,2420,La Torre,,Chuquisaca,Nor Cinti,Camargo,640345945
+E000001029,-63.96306,-19.82111,1117,Monteagudo_El Ba?ado,,Chuquisaca,Hernando Siles,Monteagudo,620056380
+E000001031,-65.14667,-20.49139,3120,Muyuquiri,,Chuquisaca,Nor Cinti,Camargo,640327505
+E000001032,-64.29278,-18.99611,2220,Nuevo Mundo,,Chuquisaca,B. Boeto,Villa Serrano,620065969
+E000001033,-65.27556,-19.20472,2398,?ucchu,,Chuquisaca,Oropeza,Yotala,640419597
+E000001034,-64.30222,-19.30222,2102,Padilla,,Chuquisaca,Tomina,Padilla,620059105
+E000001038,-65.42583,-18.53417,2300,Poroma (CHQ),,Chuquisaca,Oropeza,Poroma,620114105
+E000001039,-65.53056,-19.01972,3080,Potolo,,Chuquisaca,Oropeza,Sucre,640297476
+E000001041,-65.17722,-19.35333,2200,Puente Sucre,,Chuquisaca,Oropeza,Yotala,640510613
+E000001042,-65.30833,-18.98333,3300,Punilla,,Chuquisaca,Oropeza,Sucre,620121007
+E000001043,-64.61611,-18.825,2460,Redencion Pampa,,Chuquisaca,Zuda?ez,Mojocoya,620035687
+E000001045,-65.13333,-20.1025,3055,San Lucas,,Chuquisaca,Nor Cinti,San Lucas,640386238
+E000001048,-64.77528,-20.58278,2100,Santa Elena,,Chuquisaca,Nor Cinti,Villa Charcas,640342487
+E000001051,-65.40528,-19.11,2859,Talula_Tako Tako,,Chuquisaca,Oropeza,Sucre,640277896
+E000001056,-64.26417,-19.16972,1980,Urriolagoytia,,Chuquisaca,B. Boeto,Villa Serrano,620053593
+E000001058,-64.38778,-19.36083,2080,Villa Alcala,,Chuquisaca,Tomina,Alcal�,620050852
+E000001059,-64.3225,-19.11833,2108,Villa Serrano,,Chuquisaca,B. Boeto,Villa Serrano,620092118
+E000001060,-64.85278,-19.40833,2030,Vi?a Quemada,,Chuquisaca,Zuda?ez,Villa Ricardo Mugia - Icla,640462232
+E000001062,-65.26639,-19.16167,2520,Yotala,,Chuquisaca,Oropeza,Yotala,640427659
+E000001063,-64.70333,-19.11889,2475,Zuda?ez,,Chuquisaca,Zuda?ez,Zuda�ez,620094871
+E000001063,-64.70333,-19.11889,2475,Zuda?ez,,Chuquisaca,Zuda?ez,Zuda�ez,620096247
+E000001064,-65.24306,-19.03806,2840,El Reloj,,Chuquisaca,Oropeza,Sucre,620075601
+E000001066,-63.89472,-20.58083,820,Rosario del Ingre,,Chuquisaca,Hernando Siles,Huacareta,640465750
+E000001072,-65.24306,-19.03806,2840,Sucre SENAMHI,,Chuquisaca,Oropeza,Sucre,620075601
+E000001082,-65.1575,-20.23611,3408,Padcoyo_H,,Chuquisaca,Nor Cinti,San Lucas,640282564
+E000001083,-64.0275,-20.72833,860,?acamiri Iguembecito,,Chuquisaca,Hernando Siles,Huacareta,640547550
+E000001086,-63.36,-20.81361,660,Macharety,,Chuquisaca,Luis Calvo,Macharet�,640501474
+E000002001,-68.00833,-17.09417,3888,Ayo Ayo,,La Paz,Aroma,Ayo Ayo,660105651
+E000002003,-68.99944,-17.21167,3880,Achiri,,La Paz,Pacajes,Caquiaviri,660085941
+E000002004,-68.07139,-16.53083,3200,Achumani,,La Paz,Murillo,Nuestra Se�ora de La Paz,620202059
+E000002005,-69.08861,-16.16917,3815,Copacabana,,La Paz,Manco Kapac,Copacabana,660045796
+E000002006,-68.63556,-17.28056,3826,Calacoto,,La Paz,Pacajes,Calacoto,660126070
+E000002008,-68.28167,-16.90028,3911,Collana,,La Paz,Aroma,Collana,660057071
+E000002009,-68.745,-15.24833,2250,Camata,,La Paz,Mu ecas,Ayata,620397385
+E000002012,-67.57361,-15.83472,600,Caranavi,,La Paz,Caranavi,Caranavi,620446952
+E000002014,-69.06417,-15.75528,3826,Carabuco,,La Paz,Camacho,Puerto Mayor de Carabuco,660041565
+E000002015,-69.48639,-17.15861,4253,Catacora,,La Paz,Gral. Jose Manuel Pando,Catacora,660085939
+E000002017,-67.14972,-16.88278,2240,Chorocona,,La Paz,Inquisivi,Inquisivi,620275007
+E000002019,-68.49639,-16.29611,3870,Chirapaca,,La Paz,Los Andes,Batallas,660067621
+E000002023,-67.45278,-16.47306,1946,Irupana,,La Paz,Sud Yungas,Irupana,620211688
+E000002040,-68.10083,-16.52278,3480,Alto Obrajes_Barrio Magisterio,,La Paz,Murillo,Nuestra Se�ora de La Paz,620255724
+E000002041,-68.16083,-16.58111,3764,Achocalla,,La Paz,Murillo,Achocalla,620221326
+E000002042,-68.90417,-15.89833,3870,Ancoraimes,,La Paz,Omasuyos,Villa Ancoraimes,660039454
+E000002044,-69.21417,-17.28889,4120,Berenguela,,La Paz,Pacajes,Santiago de Machaca,660021878
+E000002050,-67.25222,-16.63722,2012,Circuata,,La Paz,Inquisivi,Cajuata,620017682
+E000002052,-67.45528,-17.37694,3965,Conchamarca,,La Paz,Aroma,Sicasica,660078199
+E000002055,-69.00361,-15.19528,3659,Charazani,,La Paz,Bautista Saavedra,Charazani,620354725
+E000002056,-68.0925,-16.44972,4024,Chuquiaguillo_LP,,La Paz,Murillo,Nuestra Se�ora de La Paz,620248839
+E000002090,-68.19861,-16.51028,4071,El Alto Aeropuerto,,La Paz,Murillo,El Alto,660074664
+E000003003,-65.93278,-17.78361,3032,Anzaldo,,Cochabamba,Esteban Arce,Anzaldo,620112686
+E000003004,-65.76889,-17.56556,2749,Arani,,Cochabamba,Arani,Arani,620141572
+E000003005,-66.26528,-17.71,2406,Capinota,,Cochabamba,Capinota,Capinota,620225516
+E000003008,-65.87083,-17.33611,3309,Colomi,,Cochabamba,Chapare,Colomi,620197975
+E000003009,-65.64333,-17.00778,517,Cristal Mayu,,Cochabamba,Chapare,Villa Tunari,620301159
+E000003018,-66.23167,-17.34722,2614,La Violeta,,Cochabamba,Quillacollo,Tiquipaya,620169082
+E000003020,-66.32722,-17.09028,3793,Misicuni,,Cochabamba,Quillacollo,Quillacollo,620246123
+E000003021,-65.31722,-17.91833,2045,Mizque,,Cochabamba,Mizque,Mizque,620153973
+E000003023,-66.31861,-17.36611,2600,Pairumani,,Cochabamba,Quillacollo,Vinto,620123672
+E000003024,-66.34361,-17.56611,2493,Parotani,,Cochabamba,Quillacollo,Sipesipe,620240642
+E000003028,-65.90472,-17.52861,2710,San Benito,,Cochabamba,Punata,San Benito,620218626
+E000003031,-65.72444,-17.42528,3304,Tiraque,,Cochabamba,Tiraque,Tiraque,620219995
+E000003035,-66.17444,-17.41611,2548,Cochabamba Aeropuerto,,Cochabamba,Cercado,Cochabamba,620142940
+E000003067,-66.24917,-17.565,2554,Santiva?ez,,Cochabamba,Capinota,Santiva�ez,620169092
+E000003083,-65.88333,-17.8,3174,Sacabamba,,Cochabamba,Esteban Arce,Anzaldo,620125070
+E000003097,-66.17472,-17.38139,2587,Sarco,,Cochabamba,Cercado,Cochabamba,620203482
+E000003123,-66.21694,-17.09861,3896,Sivingani Misicuni,,Cochabamba,Quillacollo,Tiquipaya,620036971
+E000003380,-66.3525,-17.16528,3952,Sunjani Misicuni,,Cochabamba,Quillacollo,Quillacollo,620186958
+E000003381,-66.36556,-17.18028,4273,Templo Misicuni,,Cochabamba,Quillacollo,Quillacollo,620186958
+E000004001,-67.50639,-18.77194,3762,Andamarca,,Oruro,Sud Carangas,Andamarca,660096527
+E000004004,-67.67833,-18.34389,3758,Corque,,Oruro,Carangas,Corque,660157062
+E000004005,-68.70639,-18.17778,3906,Cosapa,,Oruro,Sajama,Turco,660114117
+E000004006,-67.46389,-17.78694,3735,Chuqui?a,,Oruro,Saucari,Toledo,660152830
+E000004010,-67.93972,-17.83556,3873,Huayllamarca,,Oruro,Nor Carangas,Huayllamarca,660053567
+E000004014,-66.95972,-19.23,3724,Quillacas,,Oruro,Avaroa,Santuario de Quillacas,660169046
+E000004015,-68.78917,-18.57194,3845,Sacabaya,,Oruro,Atahuallpa,Sabaya,660166923
+E000004019,-67.59917,-19.275,3712,San Martin,,Oruro,Ladislao Cabrera,Salinas de Garc� Mendoza,660114135
+E000004027,-67.08,-17.97472,3720,Caba?a Forestal Oruro,,Oruro,Cercado,Oruro,660147201
+E000004035,-68.41639,-17.8425,3906,Curahuara de Carangas,,Oruro,Sajama,Curahuara de Carangas,660116223
+E000005007,-65.36111,-19.64806,3450,Chinoli,,Potos?,Jose Maria Linares,Puna,640276772
+E000005009,-66.13333,-19.85,3760,Chaquilla,,Potos?,Antonio Quijarro,Porco,640365488
+E000005013,-67.8175,-22.17222,4278,Laguna Colorada,,Potos?,Sud Lipez,San Pablo,660172616
+E000005015,-65.75,-19.58333,3950,Potosi Los Pinos,,Potos?,Tomas Frias,Potos�,640390818
+E000005017,-65.55056,-21.82917,3400,Mojo,,Potos?,Modesto Omiste,Villaz�n,640501528
+E000005018,-65.64694,-20.82222,2616,Cotagaita Mosoj Llajta,,Potos?,Nor Chichas,Cotagaita,640575203
+E000005020,-65.50333,-19.79722,3420,Puna,,Potos?,Jose Maria Linares,Puna,640404653
+E000005021,-65.43333,-20.68333,2560,Palca Higueras,,Potos?,Nor Chichas,Cotagaita,640546395
+E000005027,-67.67556,-21.14778,4230,San Agustin,,Potos?,Enrique Baldivieso,San Agust�n,660154295
+E000005028,-65.82167,-21.74639,3200,Talina,,Potos?,Sud Chichas,Tupiza,640581013
+E000005029,-65.79472,-19.47167,3340,Tarapaya,,Potos?,Tomas Frias,Potos�,640419611
+E000005030,-65.71528,-21.43833,2956,Tupiza,,Potos?,Sud Chichas,Tupiza,640589060
+E000005032,-65.55,-19.2,3080,Tacobamba,,Potos?,Cornelio Saavedra,Tacobamba,640370063
+E000005034,-65.6,-22.08333,3443,Villazon,,Potos?,Modesto Omiste,Villaz�n,640504999
+E000005035,-65.91028,-19.38889,3450,Yocalla,,Potos?,Tomas Frias,Yocalla,640371221
+E000005036,-65.55,-19.58333,3550,Chaqui,,Potos?,Cornelio Saavedra,Chaqu�,640350497
+E000005037,-65.51194,-18.80472,3200,Ravelo,,Potos?,Chayanta,Ravelo,640241015
+E000005038,-65.83333,-21.33333,3121,Oploca,,Potos?,Sud Chichas,Tupiza,640517630
+E000005045,-66.9,-21.83333,4450,San Antonio de Lipez,,Potos?,Sud Lipez,San Pablo,660128962
+E000005046,-66.61667,-21.68333,4230,San Pablo de Lipez,,Potos?,Sud Lipez,San Pablo,660143743
+E000005049,-65.81667,-21.68333,3000,San Jos? de Pampa Grande,,Potos?,Sud Chichas,Tupiza,640360979
+E000005050,-65.72083,-19.53667,4100,Potosi Aeropuerto,,Potos?,Tomas Frias,Potos�,640292895
+E000005052,-66.56028,-18.425,3792,Llallagua,,Potos?,Rafael Bustillo,Llallagua,620131985
+E000005054,-64.83333,-19.58333,2050,Oronkota PTI,,Potos?,Jose Maria Linares,Villa Ricardo Mugia - Icla,640482975
+E000005058,-66.21667,-20.93333,3700,Atocha,,Potos?,Sud Chichas,Atocha,640530281
+E000005060,-65.61583,-20.46667,2580,Tumusla,,Potos?,Nor Chichas,Cotagaita,640485328
+E000005062,-65.53333,-19.31667,3850,Colavi,,Potos?,Cornelio Saavedra,Tacobamba,640323985
+E000005063,-65.21278,-19.38056,2645,Casin,,Potos?,Cornelio Saavedra,Betanzos,640508309
+E000005065,-66.08333,-18.01667,3020,Acasio,,Potos?,Gral.B.Bilbao,Acasio,620144349
+E000005069,-66.14917,-18.86972,3700,Ayoma,,Potos?,Chayanta,Colquechaca,620123753
+E000005071,-66.53111,-20.06722,3920,Tomave,,Potos?,Antonio Quijarro,Tomave,640400059
+E000005072,-65.98333,-18.26667,2743,San Pedro de Buena Vista,,Potos?,Charcas,San Pedro,620181513
+E000005074,-68.96667,-19.05,3440,Actara,,Potos?,Chayanta,,660184531
+E000005089,-65.66667,-20.82083,2620,Cotagaita,,Potos?,Nor Chichas,Cotagaita,640572899
+E000006001,-63.29389,-21.85556,480,Algarrobillas,,Tarija,Gran Chaco,Yacuiba,640416283
+E000006002,-64.46667,-21.3,2980,Alto Cajas,,Tarija,Mendez,San Lorenzo,640032636
+E000006006,-64.85083,-21.90222,2030,Ca?as,,Tarija,Arce,Padcaya,640508445
+E000006009,-64.78889,-21.49917,2027,Coimata,,Tarija,Mendez,San Lorenzo,640388615
+E000006010,-65.2,-21.25,2345,El Puente,,Tarija,Mendez,El Puente,640569466
+E000006012,-63.86861,-21.70417,800,Itau,,Tarija,Gran Chaco,Carapar�,640493458
+E000006014,-64.7975,-21.81028,1900,Juntas,,Tarija,Aviles,Uriondo,640568344
+E000006018,-64.27944,-21.40806,1800,Narvaez,,Tarija,O'Connor,Entre R�os,640425474
+E000006021,-63.44194,-21.53139,460,Palmar Grande,,Tarija,Gran Chaco,Villa Montes,640344841
+E000006023,-64.87833,-21.73472,2100,Pinos Sud,,Tarija,Cercado,Tarija,640023444
+E000006027,-64.72,-21.61028,1820,San Jacinto Sud,,Tarija,Cercado,Tarija,640529165
+E000006028,-64.815,-21.62333,1987,San Andres,,Tarija,Cercado,Tarija,640499214
+E000006030,-64.7,-21.38333,2080,Sella Quebrada,,Tarija,Mendez,San Lorenzo,640426625
+E000006031,-64.71083,-21.54667,1875,Tarija Aeropuerto,,Tarija,Cercado,Tarija,640405897
+E000006032,-65.045,-21.26833,2720,Tomayapo Pueblo,,Tarija,Mendez,El Puente,640542971
+E000006033,-64.81583,-21.30806,2200,Trancas,,Tarija,Mendez,San Lorenzo,640479613
+E000006036,-63.65444,-21.96556,580,Yacuiba Aeropuerto,,Tarija,Gran Chaco,Yacuiba,640313761
+E000006037,-64.55083,-21.37222,2200,Yesera Norte,,Tarija,Cercado,Tarija,640412800
+E000006039,-64.31167,-22.77083,385,Bermejo Aeropuerto,,Tarija,Arce,Bermejo,640367949
+E000006043,-64.72111,-21.54306,1859,El Tejar (TJA),,Tarija,Cercado,Tarija,640405897
+E000006044,-64.17056,-21.50306,1260,Entre Rios (TJA),,Tarija,O'Connor,Entre R�os,640532614
+E000006045,-64.06639,-21.17417,770,Timboy,,Tarija,O'Connor,Entre R�os,640367862
+E000006052,-65.32639,-21.81889,2643,Tojo,,Tarija,Mendez,Yunchar�,640529178
+E000006053,-64.23472,-21.1475,821,San Josecito,,Tarija,O'Connor,Culpina,640613237
+E000006055,-63.76139,-21.19056,495,Puerto Margarita,,Tarija,Gran Chaco,Entre R�os,640514169
+E000006056,-62.9175,-21.82472,292,Crevaux,,Tarija,Gran Chaco,Yacuiba,640409367
+E000006064,-64.03806,-21.445,1103,Berety,,Tarija,O'Connor,Entre R�os,640418562
+E000006069,-62.99722,-21.54167,398,Ibibobo,,Tarija,Gran Chaco,Villa Montes,640462345
+E000006132,-63.41222,-21.39,396,Aguaraycito,,Tarija,Gran Chaco,Villa Montes,640424320
+E000006153,-64.97556,-21.5125,3460,Campanario,,Tarija,Mendez,El Puente,640424329
+E000006161,-64.67667,-22.02472,1509,La Merced,,Tarija,Arce,Padcaya,640539555
+E000006163,-63.955,-21.32806,786,Tarupayo,,Tarija,O'Connor,Entre R�os,640478462
+E000006164,-64.77833,-21.55667,1978,Turumayo,,Tarija,Cercado,Tarija,640345996
+E000006166,-63.78139,-21.415,763,Palos Blancos,,Tarija,O'Connor,Entre R�os,640514180
+E000006167,-63.55056,-21.66056,619,Sachapera,,Tarija,Gran Chaco,Yacuiba,640411664
+E000007001,-63.40444,-18.91972,440,Abapo,,Santa Cruz,Cordillera,Guti�rrez,620210443
+E000007002,-63.16917,-15.91528,247,Asencion de Guarayos Aerop,,Santa Cruz,?uflo de Chavez,Ascenci�n de Guarayos,620298349
+E000007006,-64.52972,-17.91361,1614,Comarapa,,Santa Cruz,Obispo Santistevan,Comarapa,620105814
+E000007007,-62.0275,-16.13833,497,Concepcion Aeropuerto SCZ,,Santa Cruz,?uflo de Chavez,Concepci�n,620367160
+E000007010,-63.37917,-18.56556,570,Florida,,Santa Cruz,Cordillera,Cabezas,620100341
+E000007012,-63.95,-18.1,1350,Mairana,,Santa Cruz,Florida,Mairana,620131969
+E000007014,-64.21667,-18.11667,1400,Mataral,,Santa Cruz,Florida,Pampa Grande,620160866
+E000007015,-63.24167,-17.11,245,Minero (Unagro),,Santa Cruz,Obispo Santistevan,Mineros,620211721
+E000007017,-62.88333,-17.21667,252,Okinawa I,,Santa Cruz,Warnes,Okinawa Uno,620235124
+E000007022,-57.81917,-18.97889,234,Puerto Suarez Aeropuerto,,Santa Cruz,German Busch,Puerto Suarez,640247936
+E000007026,-59.76333,-18.32972,277,Robor? Aeropuerto,,Santa Cruz,Chiquitos,Robor�,640219101
+E000007028,-60.96194,-16.38167,413,San Ignacio de Velasco Aerop,,Santa Cruz,Velasco,San Ignacio,620247461
+E000007029,-62.47083,-16.27139,234,San Javier Aeropuerto,,Santa Cruz,?uflo de Chavez,San Javier,620219933
+E000007036,-64.10806,-18.48194,2030,Vallegrande Aeropuerto,,Santa Cruz,Vallegrande,Vallegrande,620142996
+E000007039,-63.17806,-17.805,413,Trompillo Aeropuerto,,Santa Cruz,Andres Iba?ez,Santa Cruz de la Sierra,620149841
+E000007040,-63.52583,-20.00667,810,Camiri Aeropuerto,,Santa Cruz,Cordillera,Camiri,620059139
+E000007042,-60.74417,-17.83222,284,San Jos? de Chiquitos Aerop,,Santa Cruz,Chiquitos,San Jos�,620119571
+E000007043,-63.13889,-17.64861,378,Viru Viru Aeropuerto,,Santa Cruz,Andres Iba?ez,Warnes,620167713
+E000007058,-64.35,-18.08333,1930,El Qui?e,,Santa Cruz,Manuel Maria Caballero,Comarapa,620111329
+E000007082,-63.15,-17.76667,398,Vallecito,,Santa Cruz,Andres Iba?ez,Santa Cruz de la Sierra,620129196
+E000008003,-64.05972,-13.26111,141,Magdalena Aeropuerto,,Beni,It?nez,Magdalena,620990335
+E000008004,-64.66583,-13.04722,139,San Joaquin Aeropuerto,,Beni,Mamore,San Joaqu�n,621050867
+E000008006,-65.43444,-13.76167,144,Santa Ana del Yacuma Aerop,,Beni,Yacuma,Santa Ana,620539032
+E000008007,-64.91639,-14.82333,156,Trinidad Aeropuerto,,Beni,Cercado,Trinidad,620500558
+E000008008,-66.07611,-11.00667,141,Riberalta Aeropuerto,,Beni,Vaca Diez,Riberalta,620599432
+E000008009,-67.50278,-14.42944,204,Rurrenabaque Aeropuerto,,Beni,Gral. J. Ballivian,Puerto Menor de Rurrenabaque,620521179
+E000008010,-65.63333,-14.96667,160,San Ignacio de Moxos Aerop,,Beni,Moxos,San Ignacio,620435897
+E000008011,-66.73861,-14.85833,194,San Borja Aeropuerto,,Beni,Gral. J. Ballivian,San Borja,620684949
+E000008012,-67.35278,-14.30278,280,Reyes Aeropuerto,,Beni,Gral. J. Ballivian,Reyes,620636759
+E000008015,-64.60556,-13.26444,139,San Ram?n Aeropuerto,,Beni,Mamore,San Ram�n,620155102
+E000008022,-63.70194,-13.65806,150,Baures Aeropuerto,,Beni,It?nez,Baures,620836246
+E000009002,-68.78028,-11.03972,235,Cobija Aeropuerto,,Pando,Nicolas Suarez,Cobija,620716394
+EV00000001,-62.630207,-21.303418,0, ,V,Tarija,Gran Chaco,Villa Montes,640310266
+EV00000002,-62.611245,-20.69665,0, ,V,Chuquisaca,Luis Calvo,Macharet�,640424284
+EV00000003,-62.706053,-19.824421,0, ,V,Luis Calvo,Cordillera,Charagua,620067391
+EV00000004,-61.890708,-19.445191,0, ,V,Santa Cruz,Cordillera,Charagua,640448410
+EV00000005,-62.478515,-18.610885,0, ,V,Santa Cruz,Cordillera,Charagua,620127866
+EV00000006,-61.264979,-18.705692,0, ,V,Santa Cruz,Cordillera,Charagua,620149889
+EV00000007,-59.710135,-18.895307,0, ,V,Santa Cruz,Cordillera,Charagua,640267518
+EV00000008,-58.420753,-19.350384,0, ,V,Santa Cruz,Germ�n Busch,Puerto Suarez,640363156
+EV00000009,-58.62933,-18.440231,0, ,V,Santa Cruz,Germ�n Busch,El Carmen Rivero T�rrez,640253669
+EV00000010,-59.255059,-17.833463,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640258243
+EV00000011,-58.269061,-17.700733,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640220219
+EV00000012,-58.970637,-17.207734,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640272036
+EV00000013,-58.686214,-16.506158,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640251260
+EV00000014,-59.330905,-16.714735,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640177545
+EV00000015,-59.804943,-17.492156,0, ,V,Santa Cruz,Chiquitos,San Jos�,640206388
+EV00000016,-60.203134,-16.828504,0, ,V,Santa Cruz,Velasco,San Rafael,640179856
+EV00000017,-61.227056,-16.90435,0, ,V,Santa Cruz,Velasco,San Miguel,620175938
+EV00000018,-60.335865,-15.89939,0, ,V,Santa Cruz,Velasco,San Ignacio,620314859
+EV00000019,-61.15121,-15.633929,0, ,V,Santa Cruz,Velasco,San Ignacio,620324477
+EV00000020,-60.468595,-14.799623,0, ,V,Santa Cruz,Velasco,San Ignacio,620325809
+EV00000021,-61.397709,-14.401431,0, ,V,Santa Cruz,Velasco,San Ignacio,620529436
+EV00000021,-61.397709,-14.401431,0, ,V,Santa Cruz,Velasco,San Ignacio,620569339
+EV00000022,-61.170171,-13.661932,0, ,V,Santa Cruz,Velasco,San Ignacio,620521138
+EV00000023,-62.0424,-15.197814,0, ,V,Santa Cruz,�uflo De Ch�vez,Concepci�n,620554246
+EV00000024,-62.440592,-14.306624,0, ,V,Santa Cruz,�uflo De Ch�vez,Concepci�n,620525300
+EV00000025,-62.952552,-15.311583,0, ,V,Santa Cruz,Guarayos,Urubicha,620109803
+EV00000026,-63.161129,-14.610008,0, ,V,Santa Cruz,Guarayos,Urubicha,620599623
+EV00000027,-63.255936,-13.965317,0, ,V,Beni,It�nez,Baures,620832132
+EV00000028,-62.66813,-13.415433,0, ,V,Beni,It�nez,Baures,620588550
+EV00000029,-63.331782,-12.865549,0, ,V,Beni,It�nez,Magdalena,620518343
+EV00000030,-63.729974,-15.046122,0, ,V,Santa Cruz,Guarayos,Ascenci�n de Guarayos,620360220
+EV00000031,-63.919589,-14.420393,0, ,V,Beni,Cercado,San Javier,620437246
+EV00000032,-64.829741,-14.211816,0, ,V,Beni,Cercado,San Javier,620709682
+EV00000033,-64.317781,-13.851547,0, ,V,Beni,It�nez,Huacaraje,620552795
+EV00000034,-64.798577,-15.084045,0, ,V,Beni,Marb�n,Loreto,620358848
+EV00000035,-64.014397,-15.709775,0, ,V,Beni,Marb�n,San Andr�s,620386400
+EV00000036,-64.867664,-15.52016,0, ,V,Beni,Marb�n,Loreto,620314838
+EV00000037,-65.474432,-16.27862,0, ,V,Beni,Moxos,San Ignacio,620273599
+EV00000038,-63.597244,-16.468235,0, ,V,Santa Cruz,Obispo Santist�ban,San Pedro,620342409
+EV00000039,-63.692051,-17.66281,0, ,V,Santa Cruz,Ichilo,Buena Vista,620149832
+EV00000040,-63.919589,-17.03708,0, ,V,Santa Cruz,Ichilo,San Juan,620189700
+EV00000041,-64.507396,-16.145889,0, ,V,Santa Cruz,Ichilo,Yapacan�,620347897
+EV00000042,-64.412588,-16.714735,0, ,V,Santa Cruz,Ichilo,Yapacan�,620074102
+EV00000043,-64.867664,-17.03708,0, ,V,Cochabamba,Carrasco,Puerto Villarroel,620244744
+EV00000044,-64.829741,-17.568002,0, ,V,Cochabamba,Carrasco,Pojo,620129187
+EV00000045,-64.412588,-17.321503,0, ,V,Cochabamba,Carrasco,Entre R�os,620060375
+EV00000046,-63.711013,-16.013159,0, ,V,Santa Cruz,Guarayos,El Puente,620270837
+EV00000047,-63.04736,-16.41135,0, ,V,Santa Cruz,Guarayos,El Puente,620356166
+EV00000048,-62.687091,-16.809542,0, ,V,Santa Cruz,�uflo De Ch�vez,San Juli�n,620319039
+EV00000049,-62.232015,-17.226695,0, ,V,Santa Cruz,�uflo De Ch�vez,Cuatro Ca�adas,620159443
+EV00000050,-61.511478,-17.605925,0, ,V,Santa Cruz,Chiquitos,Pail�n,620142950
+EV00000051,-62.307861,-17.833463,0, ,V,Santa Cruz,Chiquitos,Pail�n,620151218
+EV00000052,-66.498354,-16.65785,0, ,V,Cochabamba,Chiquitos,Cocapata,620288755
+EV00000053,-66.687969,-16.03212,0, ,V,Cochabamba,Ayopaya,Cocapata,620391922
+EV00000054,-66.138085,-15.728736,0, ,V,Beni,Moxos,San Ignacio,620057538
+EV00000055,-67.237852,-15.330545,0, ,V,La Paz,Sud Yungas,Palos Blancos,620475819
+EV00000056,-66.308739,-15.14093,0, ,V,Beni,Yacuma,Santa Ana,620594147
+EV00000057,-66.176008,-14.363508,0, ,V,Beni,Yacuma,Santa Ana,620793626
+EV00000058,-66.669007,-13.567125,0, ,V,Beni,General Jos� Ballivi�n,Santa Rosa,620545902
+EV00000059,-66.024316,-13.320625,0, ,V,Beni,Yacuma,Exaltaci�n,620749538
+EV00000060,-65.227933,-12.884511,0, ,V,Beni,Yacuma,Exaltaci�n,620822443
+EV00000061,-64.715972,-12.277743,0, ,V,Beni,Mamor�,San Joaqu�n,620650410
+EV00000062,-65.284817,-12.182935,0, ,V,Beni,Yacuma,Exaltaci�n,620649028
+EV00000063,-66.062239,-12.429435,0, ,V,Beni,Yacuma,Exaltaci�n,620693073
+EV00000064,-65.474432,-11.424475,0, ,V,Beni,Vaca Diez,Guayaramer�n,620617339
+EV00000065,-65.550278,-10.191977,0, ,V,Pando,Federico Rom�n,Nueva Esperanza,620626904
+EV00000066,-66.3277,-10.571207,0, ,V,Pando,Federico Rom�n,Villa Nueva,620650317
+EV00000067,-66.460431,-9.983401,0, ,V,Pando,Federico Rom�n,Santos Mercado,620992911
+EV00000068,-66.915507,-10.419515,0, ,V,Pando,Abun�,Ingavi,620189350
+EV00000069,-66.839661,-11.708898,0, ,V,Pando,Madre de Dios,San Lorenzo,620966861
+EV00000070,-66.005354,-11.708898,0, ,V,Beni,Vaca Diez,Riberalta,620902187
+EV00000071,-66.744853,-11.86059,0, ,V,Beni,Vaca Diez,Riberalta,621015027
+EV00000072,-66.725892,-12.61905,0, ,V,Beni,General Jos� Ballivi�n,Reyes,620675196
+EV00000073,-67.275775,-13.661932,0, ,V,Beni,General Jos� Ballivi�n,Reyes,620511506
+EV00000074,-67.275775,-12.960357,0, ,V,La Paz,Abel Iturralde,Ixiamas,620550000
+EV00000075,-68.09112,-15.785621,0, ,V,La Paz,Larecaja,Guanay,620431812
+EV00000076,-67.768774,-15.159891,0, ,V,La Paz,Franz Tamayo,Apolo,620397376
+EV00000077,-69.09608,-14.704815,0, ,V,La Paz,Franz Tamayo,Pelechuco,620386346
+EV00000078,-68.394504,-14.856507,0, ,V,La Paz,Franz Tamayo,Apolo,620349201
+EV00000079,-68.242812,-14.287662,0, ,V,La Paz,Franz Tamayo,Apolo,620664278
+EV00000080,-68.811657,-13.680894,0, ,V,La Paz,Abel Iturralde,Ixiamas,620748184
+EV00000081,-67.939428,-13.680894,0, ,V,La Paz,Abel Iturralde,Ixiamas,620631217
+EV00000082,-68.394504,-13.168933,0, ,V,La Paz,Abel Iturralde,Ixiamas,620548634
+EV00000083,-67.901505,-12.638011,0, ,V,La Paz,Abel Iturralde,Ixiamas,620888477
+EV00000084,-67.218891,-12.145012,0, ,V,Pando,Madre de Dios,Sena,620562335
+EV00000085,-68.489311,-12.581127,0, ,V,La Paz,Abel Iturralde,Ixiamas,620691706
+EV00000086,-67.939428,-12.012282,0, ,V,La Paz,Abel Iturralde,Ixiamas,620523804
+EV00000087,-68.641003,-12.107089,0, ,V,Pando,Manuripi,Filadelfia,620544449
+EV00000088,-68.982311,-11.557206,0, ,V,Pando,Manuripi,Filadelfia,620130243
+EV00000089,-69.399464,-11.026283,0, ,V,Pando,Nicol�s Su�rez,Bolpebra,620915911
+EV00000090,-68.280735,-11.538244,0, ,V,Pando,Manuripi,Filadelfia,620148131
+EV00000091,-67.522275,-11.595129,0, ,V,Pando,Madre de Dios,Sena,620742565
+EV00000092,-67.427467,-11.140052,0, ,V,Pando,Manuripi,Puerto Rico,620774190
+EV00000093,-68.034235,-11.026283,0, ,V,Pando,Nicol�s Su�rez,Bella Flor,620643465
+EV00000094,-67.427467,-10.628092,0, ,V,Pando,Abun�,Santa Rosa,621014960
+EV00000095,-68.185927,-20.924188,0, ,V,Potos�,Nor Lipez,San Pedro de Quemes,660174002
+EV00000097,-66.70693,-20.582881,0, ,V,Potos�,Antonio Quijarro,Uyuni,660159917
+EV00000099,-67.977351,-19.995075,0, ,V,Potos�,Daniel Campos,Tahua,660118372
+EV00000100,-67.029276,-19.672729,0, ,V,Potos�,Antonio Quijarro,Uyuni,660168348
+EV00000101,-68.546196,-20.31742,0, ,V,Potos�,Daniel Campos,Llica,660045865
+EV00000102,-68.413465,-19.634806,0, ,V,Potos�,Daniel Campos,Llica,660190174
+EV00000103,-67.105122,-18.572962,0, ,V,Oruro,Poop�,Paz�a,660151433
+EV00000104,-68.129043,-18.781538,0, ,V,Oruro,Litoral,Escara,660070478
+EV00000105,-69.077118,-17.700733,0, ,V,La Paz,Pacajes,Chara�a,660089469
+EV00000106,-67.256814,-22.554878,0, ,V,Potos�,Sur Lipez,San Pablo,660107854
+EV00000108,-58.090018,-19.911536,0, ,V,Santa Cruz,Germ�n Busch,Puerto Suarez,640313648
+EV00000109,-58.971894,-19.000904,0, ,V,Santa Cruz,Germ�n Busch,Puerto Suarez,640304386
+EV00000110,-59.222451,-18.550948,0, ,V,Santa Cruz,Chiquitos,Robor�,640211050
+EV00000111,-58.044951,-18.370989,0, ,V,Santa Cruz,Germ�n Busch,Puerto Suarez,640270941
+EV00000112,-57.504647,-18.221445,0, ,V,Santa Cruz,Germ�n Busch,Puerto Quijarro,640378071
+EV00000113,-58.740206,-17.906333,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640306632
+EV00000114,-58.406415,-17.087306,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640276633
+EV00000115,-59.880164,-16.279727,0, ,V,Santa Cruz,Velasco,San Ignacio,620224062
+EV00000116,-60.208787,-17.930641,0, ,V,Santa Cruz,Chiquitos,San Jos�,620119575
+EV00000117,-60.459731,-17.31299,0, ,V,Santa Cruz,Chiquitos,San Jos�,620199350
+EV00000118,-59.722443,-17.018318,0, ,V,Santa Cruz,Velasco,San Rafael,640209817
+EV00000119,-61.044873,-17.364342,0, ,V,Santa Cruz,Chiquitos,San Jos�,620159448
+EV00000120,-61.863116,-18.781489,0, ,V,Santa Cruz,Cordillera,Charagua,620107238
+EV00000121,-61.167123,-19.417995,0, ,V,Santa Cruz,Cordillera,Charagua,640044056
+EV00000122,-60.441388,-19.316868,0, ,V,Santa Cruz,Cordillera,Charagua,640251413
+EV00000123,-60.488977,-18.805284,0, ,V,Santa Cruz,Cordillera,Charagua,640212217
+EV00000124,-62.307232,-20.202969,0, ,V,Santa Cruz,Cordillera,Charagua,640303297
+EV00000125,-63.062265,-20.332241,0, ,V,Santa Cruz,Cordillera,Boyuibe,640436937
+EV00000126,-62.458189,-19.208293,0, ,V,Santa Cruz,Cordillera,Charagua,620053595
+EV00000127,-63.057813,-19.365337,0, ,V,Santa Cruz,Cordillera,Charagua,620056354
+EV00000128,-63.51229,-19.426013,0, ,V,Santa Cruz,Cordillera,Guti�rrez,620043975
+EV00000129,-63.806735,-19.232982,0, ,V,Chuquisaca,Luis Calvo,Villa Vaca Guzm�n,620045343
+EV00000130,-61.655533,-18.168951,0, ,V,Santa Cruz,Chiquitos,Pail�n,620123715
+EV00000131,-62.911175,-18.283245,0, ,V,Santa Cruz,Cordillera,Cabezas,620134731
+EV00000132,-62.862832,-18.95461,0, ,V,Santa Cruz,Cordillera,Charagua,620126509
+EV00000133,-61.862515,-16.75111,0, ,V,Santa Cruz,�uflo De Ch�vez,San Antonio de Lomerio,620331416
+EV00000134,-61.493365,-16.392953,0, ,V,Santa Cruz,Velasco,San Miguel,620302500
+EV00000135,-61.588011,-15.874564,0, ,V,Santa Cruz,�uflo De Ch�vez,Concepci�n,620413930
+EV00000136,-60.461812,-16.374548,0, ,V,Santa Cruz,Velasco,San Ignacio,620257092
+EV00000137,-60.589279,-15.354354,0, ,V,Santa Cruz,Velasco,San Ignacio,620354734
+EV00000138,-61.035825,-14.994342,0, ,V,Santa Cruz,Velasco,San Ignacio,620617531
+EV00000139,-60.828717,-14.307582,0, ,V,Santa Cruz,Velasco,San Ignacio,620576210
+EV00000140,-60.443571,-13.975647,0, ,V,Santa Cruz,Velasco,San Ignacio,620772963
+EV00000141,-61.733739,-13.882967,0, ,V,Santa Cruz,Velasco,San Ignacio,620679390
+EV00000142,-62.085899,-13.481314,0, ,V,Beni,It�nez,Baures,620606442
+EV00000143,-62.304045,-13.79206,0, ,V,Beni,It�nez,Baures,620483996
+EV00000144,-63.260429,-13.373512,0, ,V,Beni,It�nez,Magdalena,620580292
+EV00000145,-62.722047,-13.9171,0, ,V,Beni,It�nez,Baures,620807365
+EV00000146,-64.431243,-14.583424,0, ,V,Beni,Cercado,San Javier,620452387
+EV00000147,-64.257691,-15.069875,0, ,V,Beni,Marb�n,San Andr�s,620317565
+EV00000148,-63.501023,-15.497583,0, ,V,Santa Cruz,Guarayos,Ascenci�n de Guarayos,620339607
+EV00000149,-64.985187,-16.522779,0, ,V,Cochabamba,Chapare,Villa Tunari,620263980
+EV00000150,-65.035155,-16.004978,0, ,V,Cochabamba,Chapare,Villa Tunari,620274959
+EV00000151,-65.236212,-17.315987,0, ,V,Cochabamba,Tiraque,Tiraque,620266775
+EV00000152,-64.853078,-18.299162,0, ,V,Cochabamba,Campero,Aiquile,620115468
+EV00000153,-66.557208,-19.538742,0, ,V,Potos�,Campero,Uyuni,660159900
+EV00000154,-66.666663,-18.876063,0, ,V,Oruro,Abaroa,Challapata,660133840
+EV00000155,-67.869711,-22.82482,0, ,V,Potos�,Sur Lipez,San Pablo,660193042
+EV00000156,-66.772055,-22.340718,0, ,V,Potos�,Sur Lipez,San Antonio de Esmoruco,640494645
+EV00000157,-66.356578,-22.127927,0, ,V,Potos�,Sur Lipez,San Antonio de Esmoruco,640548776
+EV00000159,-68.075876,-21.602835,0, ,V,Potos�,Nor Lipez,San Pedro de Quemes,660169790
+EV00000160,-68.074964,-20.440468,0, ,V,Potos�,Daniel Campos,Tahua,660162027
+EV00000162,-68.062377,-19.323284,0, ,V,Oruro,Sabaya,Coipasa,660119767
+EV00000163,-68.488895,-19.098425,0, ,V,Oruro,Sabaya,Sabaya,660159187
+EV00000164,-68.244406,-18.290003,0, ,V,Oruro,Sabaya,Turco,660132424
+EV00000165,-66.45981,-19.187654,0, ,V,Oruro,Sebasti�n Pagador,Santiago de Huari,640297485
+EV00000166,-66.637794,-17.948598,0, ,V,Cochabamba,Bolivar,Bolivar,620140215
+EV00000167,-66.976677,-17.461665,0, ,V,La Paz,Inquisivi,Colquiri,620159452
+EV00000168,-66.870473,-17.221974,0, ,V,Cochabamba,Ayopaya,Ayopaya,620177328
+EV00000169,-68.889347,-16.684572,0, ,V,La Paz,Ingavi,Jes�s de Machaka,660085228
+EV00000170,-67.664618,-16.846971,0, ,V,La Paz,Loayza,Cairoma,620009443
+EV00000171,-68.496537,-15.656943,0, ,V,La Paz,Larecaja,Sorata,620006623
+EV00000172,-68.24349,-15.328656,0, ,V,La Paz,Larecaja,Mapiri,620456559
+EV00000173,-67.903837,-14.653113,0, ,V,La Paz,Franz Tamayo,Apolo,620076744
+EV00000174,-68.781525,-14.267878,0, ,V,La Paz,Franz Tamayo,Apolo,620635380
+EV00000175,-67.199659,-14.812299,0, ,V,Beni,General Jos� Ballivi�n,Puerto Menor de Rurrenabaque,620493681
+EV00000176,-66.048,-16.318021,0, ,V,Beni,Moxos,San Ignacio,620038305
+EV00000177,-67.17477,-16.088737,0, ,V,La Paz,Sud Yungas,La Asunta,620401558
+EV00000178,-66.719293,-15.468467,0, ,V,Beni,General Jos� Ballivi�n,San Borja,620334100
+EV00000179,-65.433393,-15.682321,0, ,V,Beni,Moxos,San Ignacio,620492355
+EV00000180,-65.71407,-15.4762,0, ,V,Beni,Moxos,San Ignacio,620423539
+EV00000181,-65.257214,-15.269187,0, ,V,Beni,Moxos,San Ignacio,620451052
+EV00000182,-65.380946,-14.472067,0, ,V,Beni,Moxos,San Ignacio,620634013
+EV00000182,-65.380946,-14.472067,0, ,V,Beni,Moxos,San Ignacio,620635389
+EV00000183,-64.905053,-13.689225,0, ,V,Beni,Mamor�,San Ram�n,620518389
+EV00000184,-64.240262,-12.705258,0, ,V,Beni,It�nez,Magdalena,620602272
+EV00000185,-63.849911,-12.478733,0, ,V,Beni,It�nez,Magdalena,620790773
+EV00000186,-65.760499,-12.855928,0, ,V,Beni,Yacuma,Exaltaci�n,620792170
+EV00000187,-66.481687,-13.063858,0, ,V,Beni,Yacuma,Exaltaci�n,620490836
+EV00000188,-66.211023,-13.84908,0, ,V,Beni,Yacuma,Santa Ana,620750942
+EV00000189,-66.808773,-14.296954,0, ,V,Beni,General Jos� Ballivi�n,Santa Rosa,620627123
+EV00000190,-67.776143,-13.148329,0, ,V,La Paz,Abel Iturralde,Ixiamas,620547255
+EV00000191,-66.780271,-10.9586,0, ,V,Pando,Abun�,Ingavi,620576035
+EV00000192,-66.485694,-11.40808,0, ,V,Pando,Madre de Dios,Puerto Gonzalo Moreno,620691643
+EV00000193,-65.920239,-9.819933,0, ,V,Pando,Federico Rom�n,Santos Mercado,620585607
+EV00000194,-65.420552,-9.689261,0, ,V,Pando,Federico Rom�n,Nueva Esperanza,620968127
+EV00000195,-65.693694,-10.717257,0, ,V,Beni,Vaca Diez,Guayaramer�n,620903511
+EV00000196,-65.281512,-10.902022,0, ,V,Beni,Vaca Diez,Guayaramer�n,620816833
+EV00000197,-65.098591,-11.718138,0, ,V,Beni,Vaca Diez,Guayaramer�n,621082443
+EV00000198,-61.563882,-14.947588,0, ,V,Santa Cruz,�uflo De Ch�vez,Concepci�n,620446904
+EV00000199,-62.551983,-14.926466,0, ,V,Santa Cruz,�uflo De Ch�vez,Concepci�n,620401494
+EV00000200,-62.666019,-15.749105,0, ,V,Santa Cruz,Guarayos,Urubicha,620254308
+EV00000201,-62.273408,-15.606338,0, ,V,Santa Cruz,�uflo De Ch�vez,Concepci�n,620284570
+EV00000203,-64.185984,-22.181463,0, ,V,Tarija,Arce,Padcaya,640430125
+EV00000204,-62.648792,-22.232175,0, ,V,Tarija,Gran Chaco,Villa Montes,640632874
+EV00000205,-62.472117,-21.698417,0, ,V,Tarija,Gran Chaco,Villa Montes,640403604
+EV00000206,-62.266691,-20.997626,0, ,V,Tarija,Gran Chaco,Villa Montes,640394351
+EV00000207,-62.983593,-21.026854,0, ,V,Tarija,Gran Chaco,Villa Montes,640433518
+EV00000208,-66.107373,-20.43177,0, ,V,Potos�,Antonio Quijarro,Tomave,640382797
+EV00000209,-61.895925,-19.955996,0, ,V,Santa Cruz,Cordillera,Charagua,640325176
+EV00000210,-61.072314,-18.259757,0, ,V,Santa Cruz,Chiquitos,San Jos�,620195275
+EV00000211,-60.554068,-18.333521,0, ,V,Santa Cruz,Chiquitos,San Jos�,620126480
+EV00000212,-62.139056,-18.281589,0, ,V,Santa Cruz,Cordillera,Charagua,620182888
+EV00000213,-63.49669,-18.12294,0, ,V,Santa Cruz,Andr�s Ib��ez,El Torno,620123712
+EV00000214,-59.383196,-19.314535,0, ,V,Santa Cruz,Cordillera,Charagua,640277908
+EV00000215,-58.400211,-18.871628,0, ,V,Santa Cruz,Germ�n Busch,El Carmen Rivero T�rrez,640320506
+EV00000216,-57.865294,-17.882426,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640229448
+EV00000217,-57.843403,-17.492242,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640337713
+EV00000218,-60.705115,-16.834324,0, ,V,Santa Cruz,Velasco,San Rafael,620342427
+EV00000219,-61.729027,-17.20903,0, ,V,Santa Cruz,�uflo De Ch�vez,Cuatro Ca�adas,620087889
+EV00000220,-60.796885,-15.943692,0, ,V,Santa Cruz,Velasco,San Ignacio,620284588
+EV00000221,-61.963371,-14.544212,0, ,V,Santa Cruz,�uflo De Ch�vez,Concepci�n,620679427
+EV00000222,-61.54984,-15.430284,0, ,V,Santa Cruz,�uflo De Ch�vez,Concepci�n,620155218
+EV00000223,-60.403119,-14.400309,0, ,V,Santa Cruz,Velasco,San Ignacio,620748220
+EV00000224,-65.727802,-14.166071,0, ,V,Beni,Yacuma,Santa Ana,620792239
+EV00000225,-68.845023,-13.06653,0, ,V,La Paz,Abel Iturralde,Ixiamas,620611926
+EV00000226,-65.976404,-10.286487,0, ,V,Pando,Federico Rom�n,Santos Mercado,620596640
+EV00000227,-62.81855,-12.965839,0, ,V,Beni,It�nez,Baures,620980688
+EV00000228,-68.361588,-13.750439,0, ,V,La Paz,Abel Iturralde,Ixiamas,620734424
+EV00000229,-66.309275,-12.031595,0, ,V,Beni,General Jos� Ballivi�n,Santa Rosa,620917342
+EV00000230,-65.714083,-12.082605,0, ,V,Beni,Yacuma,Exaltaci�n,620189438
+EV00000231,-59.901153,-19.286889,0, ,V,Santa Cruz,Cordillera,Charagua,640289425
+EV00000232,-65.983472,-14.756237,0, ,V,Beni,Yacuma,Santa Ana,620559727
+EV00000233,-67.437982,-12.560495,0, ,V,La Paz,Abel Iturralde,Ixiamas,620843064
+EV00000234,-65.4692,-13.329061,0, ,V,Beni,Yacuma,Exaltaci�n,620907778
+EV00000235,-60.907258,-19.015784,0, ,V,Santa Cruz,Cordillera,Charagua,640300935
+EV00000236,-59.253794,-16.295656,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640131443
+EV00000237,-58.323853,-16.269601,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640020850
+EV00000238,-58.924314,-19.438581,0, ,V,Santa Cruz,Germ�n Busch,Puerto Suarez,640252571
+EV00000239,-66.99969,-13.306748,0, ,V,Beni,General Jos� Ballivi�n,Reyes,620603680
+EV00000240,-64.448807,-20.828606,0, ,V,Chuquisaca,Sur Cinti,Culpina,640405859
+EV00000241,-62.2716,-20.563296,0, ,V,Chuquisaca,Luis Calvo,Macharet�,640319444
+EV00000242,-63.507284,-20.447461,0, ,V,Santa Cruz,Cordillera,Cuevo,640380496
+EV00000243,-63.140371,-19.839152,0, ,V,Santa Cruz,Cordillera,Charagua,620024733
+EV00000244,-62.288048,-19.66212,0, ,V,Santa Cruz,Cordillera,Charagua,640374694
+EV00000245,-61.53138,-19.116748,0, ,V,Santa Cruz,Cordillera,Charagua,640246794
+EV00000246,-60.093709,-18.759828,0, ,V,Santa Cruz,Cordillera,Charagua,640342389
+EV00000246,-60.093709,-18.759828,0, ,V,Santa Cruz,Cordillera,Charagua,640341237
+EV00000247,-58.452833,-19.659265,0, ,V,Santa Cruz,Germ�n Busch,Puerto Suarez,640438052
+EV00000248,-58.006446,-19.462245,0, ,V,Santa Cruz,Germ�n Busch,Puerto Suarez,640458777
+EV00000249,-59.015123,-18.20548,0, ,V,Santa Cruz,Germ�n Busch,El Carmen Rivero T�rrez,640348119
+EV00000250,-58.349477,-18.12288,0, ,V,Santa Cruz,Germ�n Busch,El Carmen Rivero T�rrez,640235217
+EV00000251,-57.710168,-18.584645,0, ,V,Santa Cruz,Germ�n Busch,Puerto Quijarro,640245611
+EV00000252,-59.735602,-17.917206,0, ,V,Santa Cruz,Chiquitos,Robor�,640331976
+EV00000253,-61.175494,-17.895097,0, ,V,Santa Cruz,Chiquitos,San Jos�,620153972
+EV00000254,-62.532798,-18.174505,0, ,V,Santa Cruz,Cordillera,Charagua,620142980
+EV00000255,-62.765985,-17.735732,0, ,V,Santa Cruz,Andr�s Ib��ez,Cotoca,620258541
+EV00000256,-62.548026,-17.495883,0, ,V,Santa Cruz,Chiquitos,Pail�n,620237890
+EV00000257,-61.948402,-17.643409,0, ,V,Santa Cruz,Chiquitos,Pail�n,620218633
+EV00000258,-58.61232,-17.43921,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640209840
+EV00000259,-59.39897,-17.272172,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640269735
+EV00000260,-58.750805,-16.861001,0, ,V,Santa Cruz,Angel Sandoval,San Mat�as,640174096
+EV00000261,-59.749036,-16.633762,0, ,V,Santa Cruz,Velasco,San Rafael,640255878
+EV00000262,-60.295872,-15.538841,0, ,V,Santa Cruz,Velasco,San Ignacio,620418038
+EV00000262,-60.295872,-15.538841,0, ,V,Santa Cruz,Velasco,San Ignacio,620379508
+EV00000263,-63.116366,-16.756679,0, ,V,Santa Cruz,�uflo De Ch�vez,San Juli�n,620247480
+EV00000264,-64.151293,-16.345181,0, ,V,Santa Cruz,Ichilo,San Juan,620357539
+EV00000265,-63.982827,-16.643566,0, ,V,Santa Cruz,Sara,Santa Rosa,620202063
+EV00000266,-65.434298,-16.678544,0, ,V,Cochabamba,Chapare,Villa Tunari,620287383
+EV00000267,-65.962682,-16.701672,0, ,V,Cochabamba,Chapare,Villa Tunari,620195189
+EV00000268,-64.175944,-16.051365,0, ,V,Santa Cruz,Guarayos,El Puente,620080948
+EV00000269,-64.44863,-15.590226,0, ,V,Beni,Marb�n,San Andr�s,620307962
+EV00000270,-63.307917,-15.047709,0, ,V,Santa Cruz,Guarayos,Urubicha,620407006
+EV00000271,-61.916123,-15.705439,0, ,V,Santa Cruz,�uflo De Ch�vez,Concepci�n,620262560
+EV00000272,-60.75217,-13.709389,0, ,V,Santa Cruz,Velasco,San Ignacio,620633975
+EV00000273,-61.63257,-13.548775,0, ,V,Beni,It�nez,Baures,620244559
+EV00000274,-62.370441,-13.156581,0, ,V,Beni,It�nez,Baures,620766041
+EV00000275,-63.779677,-12.929104,0, ,V,Beni,It�nez,Magdalena,620574764
+EV00000276,-63.661893,-13.205122,0, ,V,Beni,It�nez,Magdalena,620562395
+EV00000277,-63.94148,-13.986774,0, ,V,Beni,It�nez,Huacaraje,620957349
+EV00000278,-63.534592,-14.31514,0, ,V,Beni,Guarayos,Ascenci�n de Guarayos,620863802
+EV00000279,-62.804098,-14.412698,0, ,V,Beni,Guarayos,Urubicha,620470267
+EV00000280,-63.599809,-14.65229,0, ,V,Beni,Guarayos,Ascenci�n de Guarayos,620511561
+EV00000281,-64.328757,-14.220953,0, ,V,Beni,Cercado,San Javier,620760595
+EV00000282,-65.211597,-14.112212,0, ,V,Beni,Yacuma,Santa Ana,620583085
+EV00000282,-65.211597,-14.112212,0, ,V,Beni,Yacuma,Santa Ana,620770219
+EV00000283,-65.816188,-13.692594,0, ,V,Beni,Yacuma,Santa Ana,620811479
+EV00000284,-66.964516,-13.880958,0, ,V,Beni,General Jos� Ballivi�n,Santa Rosa,620672512
+EV00000285,-67.832918,-14.111899,0, ,V,La Paz,Abel Iturralde,San Buenaventura,620100111
+EV00000286,-68.686788,-14.63199,0, ,V,La Paz,Franz Tamayo,Apolo,620551464
+EV00000287,-69.335488,-14.983771,0, ,V,La Paz,Franz Tamayo,Pelechuco,660080975
+EV00000288,-68.661268,-13.383227,0, ,V,La Paz,Abel Iturralde,Ixiamas,620900902
+EV00000289,-68.147304,-12.883837,0, ,V,La Paz,Abel Iturralde,Ixiamas,620514219
+EV00000290,-67.879615,-10.6638,0, ,V,Pando,Nicol�s Su�rez,Bella Flor,620995698
+EV00000291,-66.804693,-10.074884,0, ,V,Pando,Abun�,Ingavi,620675058
+EV00000292,-66.434687,-10.964802,0, ,V,Pando,Manuripi,San Pedro,620950307
+EV00000293,-67.04145,-11.311014,0, ,V,Pando,Manuripi,Puerto Rico,620578806
+EV00000294,-67.858795,-11.421658,0, ,V,Pando,Manuripi,Puerto Rico,620687516
+EV00000295,-68.398932,-11.145641,0, ,V,Pando,Nicol�s Su�rez,Bella Flor,620160492
+EV00000296,-68.597617,-11.734558,0, ,V,Pando,Manuripi,Filadelfia,620611852
+EV00000297,-68.260329,-12.159291,0, ,V,Pando,Manuripi,Filadelfia,620545825
+EV00000298,-67.596459,-12.139661,0, ,V,La Paz,Abel Iturralde,Ixiamas,620598114
+EV00000299,-69.263272,-15.492916,0, ,V,La Paz,Camacho,Puerto Acosta,660080983
+EV00000300,-67.76778,-16.172847,0, ,V,La Paz,Nor Yungas,Coroico,620339643
+EV00000301,-68.692201,-16.958069,0, ,V,La Paz,Pacajes,Caquiaviri,660040880
+EV00000302,-69.222226,-16.881332,0, ,V,La Paz,Ingavi,La (Marka) San Andr�s de Machaca,660101423
+EV00000303,-68.140761,-17.502371,0, ,V,La Paz,Gualberto Villarroel,Chacarilla,660083833
+EV00000304,-68.738957,-17.816936,0, ,V,La Paz,Pacajes,Calacoto,660137343
+EV00000305,-69.113247,-18.164218,0, ,V,Oruro,Sajama,Curahuara de Carangas,660026117
+EV00000306,-68.541541,-20.738954,0, ,V,Potos�,Nor Lipez,San Pedro de Quemes,660065584
+EV00000307,-67.612124,-22.494758,0, ,V,Potos�,Sur Lipez,San Pablo,660084621
+EV00000308,-67.441659,-22.861956,0, ,V,Potos�,Sur Lipez,San Pablo,660183187
+EV00000309,-67.289731,-22.155931,0, ,V,Potos�,Sur Lipez,San Pablo,660181767
+EV00000310,-66.217486,-21.757832,0, ,V,Potos�,Sur Lipez,Tupiza,640487698
+EV00000313,-66.903187,-20.110472,0, ,V,Potos�,Antonio Quijarro,Uyuni,660121893
+EV00000314,-64.528271,-22.376742,0, ,V,Tarija,Arce,Padcaya,640382902
+EV00000315,-67.191562,-18.971976,0, ,V,Oruro,Sur Carangas,Andamarca,660102866
+EV00000316,-65.786919,-18.609631,0, ,V,Potos�,Chayanta,Colquechaca,620115484
+EV00000317,-63.754859,-18.796181,0, ,V,Santa Cruz,Vallegrande,Postrervalle,620173283
+EV00000318,-62.181321,-18.945849,0, ,V,Santa Cruz,Cordillera,Charagua,620130639
+EV00000319,-60.787909,-19.457909,0, ,V,Santa Cruz,Cordillera,Charagua,640265242
+EV00000319,-60.787909,-19.457909,0, ,V,Santa Cruz,Cordillera,Charagua,640266394
+EV00000320,-60.087396,-17.211698,0, ,V,Santa Cruz,Chiquitos,San Jos�,620199346
+EV00000321,-61.203411,-16.059087,0, ,V,Santa Cruz,Velasco,San Ignacio,620372660
+EV00000322,-61.08991,-14.627175,0, ,V,Santa Cruz,Velasco,San Ignacio,620171687
+EV00000323,-61.177831,-14.066574,0, ,V,Santa Cruz,Velasco,San Ignacio,620767465
+EV00000324,-62.894018,-14.899386,0, ,V,Santa Cruz,Guarayos,Urubicha,620406996
+EV00000325,-62.272383,-16.71075,0, ,V,Santa Cruz,�uflo De Ch�vez,Concepci�n,620214454
+EV00000326,-65.041481,-13.302172,0, ,V,Beni,Mamor�,San Joaqu�n,620768801
+EV00000327,-64.726203,-12.653769,0, ,V,Beni,Mamor�,San Joaqu�n,620690333
+EV00000328,-65.499527,-12.534796,0, ,V,Beni,Yacuma,Exaltaci�n,620571989
+EV00000329,-66.193616,-12.820331,0, ,V,Beni,Yacuma,Exaltaci�n,620521094
+EV00000330,-69.103756,-11.240215,0, ,V,Pando,Nicol�s Su�rez,Bolpebra,620500371
+EV00000331,-65.852699,-11.311836,0, ,V,Beni,Vaca Diez,Riberalta,620782454
+EV00000332,-66.719648,-12.244839,0, ,V,Beni,General Jos� Ballivi�n,Reyes,620768744
+EV00000333,-66.913177,-12.934676,0, ,V,Beni,General Jos� Ballivi�n,Reyes,620580265
+EV00000334,-67.435568,-13.334019,0, ,V,La Paz,Abel Iturralde,Ixiamas,620800449
+EV00000335,-66.437622,-14.620356,0, ,V,Beni,Yacuma,Santa Ana,620512933
+EV00000336,-65.267641,-14.85509,0, ,V,Beni,Moxos,San Ignacio,620456531
+EV00000337,-66.992354,-15.749767,0, ,V,La Paz,Sud Yungas,Palos Blancos,620453829
+EV00000338,-66.856724,-16.477882,0, ,V,La Paz,Inquisivi,Inquisivi,620207562
+EV00000339,-65.781208,-15.95916,0, ,V,Beni,Moxos,San Ignacio,620313486
+EV00000340,-64.075967,-17.591192,0, ,V,Santa Cruz,Ichilo,Yapacan�,620134692
+EV00000341,-65.574647,-18.153062,0, ,V,Cochabamba,Mizque,Mizque,620149858
+EV00000342,-67.796469,-15.520397,0, ,V,La Paz,Larecaja,Teoponte,620306584
+EV00000343,-63.987546,-15.345626,0, ,V,Beni,Marb�n,San Andr�s,620396014
+EV00000344,-67.126452,-10.829488,0, ,V,Pando,Abun�,Santa Rosa,620695741
+EV00000345,-67.222781,-11.796065,0, ,V,Pando,Madre de Dios,Sena,620687535
+EV00000346,-66.419713,-12.462314,0, ,V,Beni,General Jos� Ballivi�n,Santa Rosa,620482546
+EV00000347,-64.317781,-13.58039,0, ,V,Beni,It�nez,Huacaraje,620785329
+EV00000348,-62.996025,-13.656684,0, ,V,Beni,It�nez,Baures,620599569

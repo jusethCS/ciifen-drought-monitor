@@ -22,7 +22,7 @@ PNG_DIR = "data/index/png"
 TIF_DIR = "data/index/tif"
 TXT_DIR = "data/index/txt"
 DAT_DIR = "data/historical"
-COMIDS_PATH = "assets/Esta_Venezuela.csv"
+COMIDS_PATH = "assets/Esta_Bolivia.csv"
 OUT_PATH = "data/historical/"
 OUT_PATH_FORMATED = "data/formated_historical/"
 OUTPUT_FILE = f"data/index/txt/{DATE.strftime('%Y_%m')}.csv"
@@ -206,8 +206,8 @@ def plot_raster(raster_url: str, gdf: gpd.GeoDataFrame, fig_name: str, color: an
     gdf.plot(ax=ax, color='none', edgecolor='black', linewidth=1)
 
     # Establecer límites en los ejes x e y
-    plt.xlim(-73.75, -59.50)
-    plt.ylim(0.50, 12.50)
+    plt.xlim(-73.75, -56.00)
+    plt.ylim(-23.50, -9.0)
 
     # Agregar la barra de color
     fig.colorbar(img, ax=ax, label='', pad=0.05, shrink=0.5, extend='both', ticks=[-3.0, -2.5, -2.0, -1.5, -1.0, -0.5, 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3])
@@ -222,18 +222,20 @@ def plot_raster(raster_url: str, gdf: gpd.GeoDataFrame, fig_name: str, color: an
 
 def main():
     """Main function to execute the script."""
-    clear_output_directories()
+    #clear_output_directories()
 
     # Instantiate Geoglows
     glw = Geoglows()
 
     # Download data and compute the SDI
     print("Downloading")
-    download_data(glw)
+    #download_data(glw)
     print("Downloaded")
     metadata = pd.read_csv(COMIDS_PATH, sep=",")[["Clave", "Longitud", "Latitud", "comid"]]
     metadata.columns = ['Estacion', 'Lon', 'Lat', "comid"]
+    metadata.comid = metadata.comid.astype(int)
     sdi_outputs = compute_sdi(metadata)
+    print(metadata)
 
     # Merge metadata with SDI outputs and save to CSV
     sdi_outputs = pd.merge(metadata, sdi_outputs, on="comid")
@@ -248,7 +250,7 @@ def main():
     os.system(f'Rscript generate_tif.R {OUTPUT_FILE} {TIF12_FILE} "X12"')
 
     # Generate PNG plots
-    ec = gpd.read_file("assets/venezuela.shp")
+    ec = gpd.read_file("assets/bolivia.shp")
     plot_raster(raster_url=TIF01_FILE, gdf=ec, fig_name=PNG01_FILE, color=color, aggTime="01")
     plot_raster(raster_url=TIF03_FILE, gdf=ec, fig_name=PNG03_FILE, color=color, aggTime="03")
     plot_raster( raster_url=TIF06_FILE, gdf=ec, fig_name=PNG06_FILE, color=color, aggTime="06")
